@@ -2,6 +2,9 @@ package ptp_git;
 
 import java.util.Scanner;
 
+/*
+ * »ç¿ëÀÚ ui 
+ */
 public class Ui {
 	
 	int head() {
@@ -31,7 +34,7 @@ public class Ui {
 	}
 	
 	
-	void head1() {
+	void head1() { //// test 
 		System.out.println("\n\n");
 		int layout[][] = new int[][] {
 			{1,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,2},

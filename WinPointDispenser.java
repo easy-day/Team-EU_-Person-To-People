@@ -1,11 +1,13 @@
 package ptp_git;
 
 import java.util.Scanner;
-
+/* 
+ * 경기 결과 저장에 필요한 메서드
+ */
 public class WinPointDispenser {
 	
 	
-	int matchChoice(Team t1, Team t2) {
+	int matchRecord(Team t1, Team t2) {
 	
 		Scanner input = new Scanner(System.in);
 		int choice = 0; // 승리 팀 지정 변수

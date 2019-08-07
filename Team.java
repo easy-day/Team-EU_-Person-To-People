@@ -2,6 +2,9 @@ package ptp_git;
 
 import java.util.Scanner;
 
+/*
+ *  得 持失 梓端
+ */
 public class Team {
 	Scanner input = new Scanner(System.in);
 	String name; // 得 誤
