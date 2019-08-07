@@ -9,3 +9,6 @@ Now, We are making javaApplication without communication such as HTTP, Socet, Se
 We just test the core elements like ,, make team, show team list, match with other team, drop the team... 
 
 --This Project belongs to TeamEU
+
+
+Developer: Jang won ik.
