@@ -7,9 +7,15 @@ import java.util.Scanner;
 public class WinPointDispenser {
 	
 	
-	int matchRecord(Team t1, Team t2) {
 	
+	
+			/* ½ÂÁ¡ °á°ú ÀúÀå ¸Þ¼­µå */
+	int matchRecord(Team t1, Team t2) {
+	/*
+	 * ³»¿ë 
+	 */
 		Scanner input = new Scanner(System.in);
+		
 		int choice = 0; // ½Â¸® ÆÀ ÁöÁ¤ º¯¼ö
 		choice = input.nextInt();
 		while(true) {
@@ -21,14 +27,17 @@ public class WinPointDispenser {
 			System.out.println("\n3: ¹«½ÂºÎ");
 			
 			if(choice == 1) { // 1¹ø ÆÀÀÌ ½Â¸®ÇÒ °æ¿ì ½ÂÁ¡ 3Á¡ 2¹øÆÀ 1Á¡ ÇÏ¶ô
+				
 				t1.winPoint += 3;
 				t2.winPoint -= 1;
 				System.out.println(t1.name+": ½Â¸®"+t2.name+": ÆÐ¹è");
 			}else if(choice == 2){ // 2¹øÆÀ ½Â¸®
+				
 				t2.winPoint += 3;
 				t1.winPoint -= 1;
 				System.out.println(t2.name+": ½Â¸®"+t1.name+": ÆÐ¹è");
 			}else if(choice == 3) { // ¹«½ÂºÎ
+				
 				t1.winPoint += 1;
 				t2.winPoint += 1;
 				System.out.println("¹«½ÂºÎ");

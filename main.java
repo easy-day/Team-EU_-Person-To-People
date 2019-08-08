@@ -38,11 +38,9 @@ public class main {
 		
 		Team team[] = new Team[100]; /// 팀 객체인데 연결리스트로 바꾸거나 유동적이게 바꿔야함
 		
-		System.out.println(listSize);////test
+		int firstChoice; // loop1의 입력 변수 
 		
-		int firstChoice;
-		
-		while(true) {
+		Loop1: while(true) {
 			
 			firstChoice = ui.head();
 			
@@ -54,6 +52,9 @@ public class main {
 				break;
 			}
 			case 2:{// 경기 결과 저장
+				System.out.println(teamList+"팀을 선택하세요");
+				WinPointDispenser win = new WinPointDispenser();
+				
 				break;
 			}
 			case 3:{// 순위 보기

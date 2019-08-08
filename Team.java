@@ -7,12 +7,11 @@ import java.util.Scanner;
  */
 public class Team {
 	Scanner input = new Scanner(System.in);
+	
 	String name; // 팀 명
 	int member; // 팀원 수 
 	int ranking; // 순위
 	int winPoint;// 승점
-	int sptzPoint; // 서포터즈 카운트
-	int sptzMember; // 서포터즈 수
 	
 	
 	public Team() {
@@ -25,8 +24,6 @@ public class Team {
 		
 		ranking = 0;
 		winPoint = 0;
-		sptzPoint = 0;
-		sptzMember = 0;
 	}
 	
 	int teamDelete() {
