@@ -11,4 +11,4 @@ We just test the core elements like ,, make team, show team list, match with oth
 --This Project belongs to TeamEU
 
 
-Developer: Jang won ik.
+Developer: Jang won ik. Park jihun
