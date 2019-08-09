@@ -4,22 +4,19 @@ import java.util.Scanner;
 /* 
  * 경기 결과 저장에 필요한 메서드
  */
-public class WinPointDispenser {
+public class MatchResultSave {
 	
 	
 	
 	
 			/* 승점 결과 저장 메서드 */
 	int matchRecord(Team t1, Team t2) {
-	/*
-	 * 내용 
-	 */
+	
 		Scanner input = new Scanner(System.in);
 		
 		int choice = 0; // 승리 팀 지정 변수
 		choice = input.nextInt();
 		while(true) {
-			
 			
 			System.out.println("승리 팀을 선택해 주세요.");
 			System.out.println("1: "+t1.name);
@@ -47,4 +44,10 @@ public class WinPointDispenser {
 		
 		}
 	}
+	
+	/*
+	Team inputTeam() {
+		System.out.println("경기가 끝난 팀을 입력하세요");
+	}*/
+	
 }
