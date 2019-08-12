@@ -69,7 +69,9 @@ public class main {
 				break;
 			}
 			case 5:{// ªË¡¶
+				DeleteTeam delete = new DeleteTeam();
 				
+				delete.delete(teamList);
 				break;
 			}
 			}
