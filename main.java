@@ -31,45 +31,47 @@ public class main {
 	
 	public static void main(String[] args) {
 		Ui ui = new Ui();
+		LinkedList<Team> teamList = new LinkedList<Team>(); // 연결 자료구조로 팀의 이름과 수를 저장
+		ShowTeamList show = new ShowTeamList(); // 저장된 팀을 보여주는 클래스
+		int listSize = 0;
+		/* 앱 기능 테스트를 위해 미리 팀을 생성해놓음 나중에 삭제 요망*/
+		teamList.add(new Team("Liverpool FC",51));
 		
-		LinkedList teamList = new LinkedList(); // 연결 자료구조로 팀의 이름과 수를 저장
+		teamList.add(new Team("FC Manchaster City",45));
 		
-		int listSize = teamList.size();// 팀 수
+		teamList.add(new Team("RealMadrid FC",60));
 		
-		Team team[] = new Team[100]; /// 팀 객체인데 연결리스트로 바꾸거나 유동적이게 바꿔야함
+		teamList.add(new Team("Juventus FC",55));
+		/* 앱 기능 테스트를 위해 미리 팀을 생성해놓음 나중에 삭제 요망*/
 		
 		int firstChoice; // loop1의 입력 변수 
-		
+		 
 		Loop1: while(true) {
 			
 			firstChoice = ui.head();
 			
 			switch (firstChoice) {
 			case 1:{// 팀 목록
-				System.out.println("\n\n\n 현재 "+listSize+" 개의 팀이 존재합니다");
-				System.out.println(teamList);
-				
+				show.showTeamList(teamList);
 				break;
 			}
-			case 2:{// 경기 결과 저장
-				System.out.println(teamList+"팀을 선택하세요");
-				WinPointDispenser win = new WinPointDispenser();
+			case 2:{// 경기 결과 저장, 승패 저장, 승점 생산?
+				show.showTeamList(teamList);
 				
 				break;
 			}
 			case 3:{// 순위 보기
+				
 				break;
 			}
 			case 4:{// 팀 등록
-				team[listSize] = new Team();
-				teamList.add(team[listSize].name);
-				listSize++;
-				System.out.println(listSize);
+				teamList.add(new Team());
 				break;
 			}
 			case 5:{// 삭제
-				int deleteCount = team[listSize].teamDelete();
+				DeleteTeam delete = new DeleteTeam();
 				
+				delete.delete(teamList);
 				break;
 			}
 			}
